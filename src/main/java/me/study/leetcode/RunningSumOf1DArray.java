@@ -1,18 +1,29 @@
 package me.study.leetcode;
 
-// https://leetcode.com/problems/running-sum-of-1d-array
-class RunningSumOf1DArray {
+import me.study.CodingTest;
+
+class RunningSumOf1DArray implements CodingTest {
 
     public static int[] runningSum(int[] nums) {
-        int length = nums.length;
-        int[] result = new int[length];
-        if (length != 0)
-            result[0] = nums[0];
-
-        for (int i = 1; i < length; i++) {
-            result[i] = result[i - 1] + nums[i];
+        for (int i = 1; i < nums.length; i++) {
+            nums[i] = nums[i - 1] + nums[i];
         }
-        return result;
+        return nums;
+    }
+
+    @Override
+    public int getTimeComplexity() {
+        return 1;
+    }
+
+    @Override
+    public int getSpaceComplexity() {
+        return 1;
+    }
+
+    @Override
+    public String getPage() {
+        return "https://leetcode.com/problems/running-sum-of-1d-array";
     }
 
 }
