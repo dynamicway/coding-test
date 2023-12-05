@@ -1,5 +1,6 @@
 package me.study.leetcode;
 
+// https://leetcode.com/problems/running-sum-of-1d-array
 class RunningSumOf1DArray {
 
     public static int[] runningSum(int[] nums) {
