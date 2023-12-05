@@ -12,13 +12,13 @@ class RunningSumOf1DArray implements CodingTest {
     }
 
     @Override
-    public int getTimeComplexity() {
-        return 1;
+    public String getTimeComplexity() {
+        return "O(n)";
     }
 
     @Override
-    public int getSpaceComplexity() {
-        return 1;
+    public String getSpaceComplexity() {
+        return "O(1)";
     }
 
     @Override

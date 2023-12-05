@@ -2,9 +2,9 @@ package me.study;
 
 public interface CodingTest {
 
-    int getTimeComplexity();
+    String getTimeComplexity();
 
-    int getSpaceComplexity();
+    String getSpaceComplexity();
 
     String getPage();
 
