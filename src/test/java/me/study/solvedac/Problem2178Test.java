@@ -41,7 +41,14 @@ class Problem2178Test {
                         "10," +
                         "11",
 
-                        "100 100 1," +
+                        "5 5 9," +
+                        "11111," +
+                        "11111," +
+                        "11111," +
+                        "11111," +
+                        "11111,",
+
+                        "100 100 199," +
                         "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111," +
                         "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111," +
                         "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111," +
@@ -148,9 +155,8 @@ class Problem2178Test {
         StringTokenizer resourceTokenizer = new StringTokenizer(resource, ",");
         int[] parameter = getParameter(resourceTokenizer.nextToken());
         List<List<Integer>> map = getMap(resourceTokenizer);
-        Problem2178 sut = new Problem2178(map);
 
-        assertThat(sut.search(parameter[0], parameter[1])).isEqualTo(parameter[2]);
+        assertThat(Problem2178.search(parameter[0], parameter[1], map)).isEqualTo(parameter[2]);
     }
 
     private List<List<Integer>> getMap(StringTokenizer resourceTokenizer) {
