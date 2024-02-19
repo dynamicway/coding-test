@@ -24,10 +24,10 @@ class Problem2744 implements CodingTest {
         StringBuilder result = new StringBuilder();
 
         for (char c : source.toCharArray()) {
-            if (Character.isUpperCase(c))
-                result.append(Character.toLowerCase(c));
+            if ('A' <= c && c <= 'Z')
+                result.append((char) (c - 'A' + 'a'));
             else
-                result.append(Character.toUpperCase(c));
+                result.append((char) (c - 'a' + 'A'));
         }
 
         return result.toString();
