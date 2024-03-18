@@ -24,40 +24,40 @@ class Problem15649 implements CodingTest {
 
     static void solve(int n, int m) {
         for (int i = 1; i <= n; i++) {
-            int[] ints = new int[m];
-            ints[0] = i;
-            recursion(ints, 1, m, n);
+            int[] memory = new int[m];
+            memory[0] = i;
+            recursion(memory, 1, m, n);
         }
     }
 
-    private static void recursion(int[] result, int cursor, int cursorThreshold, int n) {
+    private static void recursion(int[] memory, int cursor, int cursorThreshold, int n) {
         if (cursor == cursorThreshold) {
-            print(result);
+            print(memory);
         } else {
             for (int i = 1; i <= n; i++) {
-                boolean flag = true;
+                boolean used = true;
                 for (int j = 0; j < cursor; j++) {
-                    if (result[j] == i) {
-                        flag = false;
+                    if (memory[j] == i) {
+                        used = false;
                         break;
                     }
                 }
-                if (flag) {
-                    int[] copyOf = Arrays.copyOf(result, cursorThreshold);
-                    copyOf[cursor] = i;
-                    recursion(copyOf, cursor + 1, cursorThreshold, n);
+                if (used) {
+                    int[] nextMemory = Arrays.copyOf(memory, cursorThreshold);
+                    nextMemory[cursor] = i;
+                    recursion(nextMemory, cursor + 1, cursorThreshold, n);
                 }
             }
         }
     }
 
-    private static void print(int[] result) {
+    private static void print(int[] memory) {
         try {
-            for (int i = 0; i < result.length; i++) {
-                if (i == result.length - 1)
-                    writer.write(Character.forDigit(result[i], 10));
+            for (int i = 0; i < memory.length; i++) {
+                if (i == memory.length - 1)
+                    writer.write(Character.forDigit(memory[i], 10));
                 else
-                    writer.write(result[i] + " ");
+                    writer.write(memory[i] + " ");
             }
             writer.write("\n");
             writer.flush();
