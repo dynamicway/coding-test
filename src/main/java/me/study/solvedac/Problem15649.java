@@ -68,12 +68,12 @@ class Problem15649 implements CodingTest {
 
     @Override
     public String getTimeComplexity() {
-        return null;
+        return "O(N!)";
     }
 
     @Override
     public String getSpaceComplexity() {
-        return null;
+        return "O(M)";
     }
 
     @Override
