@@ -1,0 +1,6 @@
+
+L	java:S106"+Replace this use of System.out by a logger.(ÁÔ×üúÿÿÿÿ8Ã˜çÄ1
+|
+java:S6204"_Replace this usage of 'Stream.collect(Collectors.toUnmodifiableList())' with 'Stream.toList()'.(½–ü£8Ä˜çÄ1
+r
+java:S1201`"UEither override Object.equals(Object), or rename the method to prevent any confusion.(ü¶ğ8ˆ¤ìÄ1

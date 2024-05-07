@@ -1,0 +1,4 @@
+
+m	java:S106"+Replace this use of System.out by a logger.(ì€ù¶8Â³Ï­æ1J$fc9a59c9-5996-4f54-aa18-cc1c545b5d2f
+”
+java:S2677"LUse or store the value returned from "readLine" instead of throwing it away.(Èñ‚½úÿÿÿÿ8Ã³Ï­æ1J$0a83b65f-5d85-4822-b3cb-126114f6ff9b
