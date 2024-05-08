@@ -202,3 +202,7 @@ Q.idea/sonarlint/securityhotspotstore/2/5/251d065679e2bfb0e19c40e9a3c145c88d8650
 Q.idea/sonarlint/securityhotspotstore/2/a/2a45a911a8f1836b0b6c5b758962572012d8f8c3,1/0/1017d171139053a6ceaff055b7159ba14e80dc44
 Å
 Q.idea/sonarlint/securityhotspotstore/5/b/5bbfa66edb4db3c7c33c5181f43510990d3307f9,1/e/1e45613b6060de813dc92caeb118e08a2124bc35
+a
+1src/main/java/me/study/solvedac/Problem20291.java,5/7/573a17fe8b4d877a35925aaf43449b3847523b1d
+e
+5src/test/java/me/study/solvedac/Problem20291Test.java,3/5/353ff3537a7cf7ee3c49552bfc3aa5ef5814afa9
