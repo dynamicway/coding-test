@@ -1,4 +1,8 @@
 
-L	java:S106"+Replace this use of System.out by a logger.(ֱװ׳üתÿÿÿÿ8טסק¶ף1
+1
+java:S1700*"Rename field "value"(ˆ²ֶ—8Ú״Üק1
+L	java:S106"+Replace this use of System.out by a logger.(ֱװ׳üתÿÿÿÿ8טסק¶ף1
 n
-java:S2677"LUse or store the value returned from "readLine" instead of throwing it away.(£­—גÿÿÿÿÿ8טסק¶ף1
+java:S2677"LUse or store the value returned from "readLine" instead of throwing it away.(£­—גÿÿÿÿÿ8טסק¶ף1
+{
+java:S12103"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(י‰£¾‏ÿÿÿÿ8ֱÚ״Üק1
